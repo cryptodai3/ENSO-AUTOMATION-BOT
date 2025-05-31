@@ -16,11 +16,11 @@ function getTimestamp() {
 
 function displayBanner() {
   const width = process.stdout.columns || 80;
-  const banner = figlet.textSync('\n YETIDAIO', { font: "ANSI Shadow", horizontalLayout: 'Speed' });
+  const banner = figlet.textSync('\n ENSO BOT', { font: "ANSI Shadow", horizontalLayout: 'Speed' });
   banner.split('\n').forEach(line => {
     console.log(chalk.blue(line.padStart(line.length + Math.floor((width - line.length) / 2))));
   });
-  console.log(chalk.green(' '.repeat((width - 28) / 2) + 'ENSO AUTO BOT !!'));
+  console.log(chalk.green(' '.repeat((width - 33) / 3) + 'BY YETIDAO !!'));
 }
 
 const rl = createInterface({
