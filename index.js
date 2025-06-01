@@ -16,11 +16,12 @@ function getTimestamp() {
 
 function displayBanner() {
   const width = process.stdout.columns || 80;
-  const banner = figlet.textSync('\n ENSO BOT', { font: "ANSI Shadow", horizontalLayout: 'Speed' });
+  const banner = figlet.textSync('\n ENSO BY CD', { font: "ANSI Shadow", horizontalLayout: 'Speed' });
   banner.split('\n').forEach(line => {
-    console.log(chalk.blue(line.padStart(line.length + Math.floor((width - line.length) / 2))));
+    console.log(chalk.cyanBright(line.padStart(line.length + Math.floor((width - line.length) / 2))));
   });
-  console.log(chalk.green(' '.repeat((width - 33) / 3) + 'BY YETIDAO !!'));
+  console.log(chalk.cyanBright(' '.repeat((width - 50) / 2) + 'ENSO-AUTOMATION-BOT - Created By YetiDAO'));
+  console.log(chalk.yellowBright(' '.repeat((width - 30) / 2) + '✪ ENSO AUTO DAILY  & DAPPS AI ✪\n'));
 }
 
 const rl = createInterface({
